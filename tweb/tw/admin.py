@@ -6,3 +6,4 @@ from .models import *
 admin.site.register(Post)
 admin.site.register(r_Post)
 admin.site.register(achPost)
+admin.site.register(Marquee)

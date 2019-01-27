@@ -46,6 +46,7 @@
 
 			<!-- Header -->
 				<header id="header" style="font-family:'Assistant'">
+
 					<h1 id="logo"><a href="/">Thapar Institute Of Engineering & Technology, Patiala</a></h1>
 					<nav id="nav" >
 						<ul>
@@ -63,6 +64,12 @@
 							<li><a href="#six">Contact</a></li>
 						</ul>
 					</nav>
+					<br>
+					<!-- <a href={{post.link}} style="border-bottom-color:transparent;"><marquee behavior="alternate">{{post.text}}</marquee></a> -->
+					{% for posto in post %}
+					<a href={{posto.link}} style="border-bottom-color:transparent;font-size: 30px; color: #f6ca3d" ><marquee behavior="alternate" scrollamount="20">{{posto.text}}</marquee></a>
+					{% endfor %}
+										
 				</header>
 
 			<!-- Banner -->
@@ -71,7 +78,7 @@
 						<header>
 							<h2 style='color: yellow'><center>Sudore. Sanguis. Studium</center></h2>
 							<p><h3><center>We play with</center></h3></p>
-							<h2 style='color: yellow'><center>Sweat. Blood. Zeal</center></h2>
+							<b><h2 style='color: yellow'><center>Sweat. Blood. Zeal</center></h2></b>
 							<p><h3><center>Fair Play is our Play!</center></h3></p>
 						</header>
 						<span class="image"><<a href="http://www.thapar.edu/" ><img src="{% static 'images/logotransparent.png' %}" alt="" /></a></span>
@@ -197,10 +204,10 @@ function carousel() {
 					</figure>
 
 					<div class="controls">
-						<a href="#item-1" class="control-button">•</a>
-						<a href="#item-2" class="control-button">•</a>
-						<a href="#item-3" class="control-button">•</a>
-						<a href="#item-4" class="control-button">•</a>
+						<a href="#item-1" class="control-button" style="border-bottom-color: transparent;">•</a>
+						<a href="#item-2" class="control-button"style="border-bottom-color: transparent;">•</a>
+						<a href="#item-3" class="control-button"style="border-bottom-color: transparent;">•</a>
+						<a href="#item-4" class="control-button"style="border-bottom-color: transparent;">•</a>
 					</div>
 				</div>
 				<br><a href="/gallery/" class="button">View All</a>
