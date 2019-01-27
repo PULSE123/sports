@@ -1583,11 +1583,20 @@
 		text-decoration: none;
 	}
 
-		a:hover {
-			color: #e44c65 !important;
-			border-bottom-color: transparent;
-		}
-
+	a:hover {
+		color: #e44c65 !important;
+		border-bottom-color: transparent;
+	}
+	a.nav-link{
+    color: #f6e009;
+    text-transform: uppercase;
+    /*padding: 4px 5px;*/
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: bold;
+    /*display: inline-block;*/
+    text-decoration: none;
+}
 	strong, b {
 		color: #ffffff;
 		font-weight: 300;

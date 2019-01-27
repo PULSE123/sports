@@ -6,7 +6,7 @@ from .models import *
 
 
 def home(request):
-    post = Post.objects.all().order_by('-timestamp')
+    post = Marquee.objects.all()
     context = {
         "post": post,
     }
